@@ -1,49 +1,103 @@
-# Hotel-lillo
-# Características principales:
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-success" />
+  <img src="https://img.shields.io/badge/backend-django-green" />
+  <img src="https://img.shields.io/badge/database-mysql-blue" />
+</p>
 
-# Sistema de reservas con verificación instantánea de disponibilidad
+<p align="center">
+  <img src="./docs/banner.png" alt="Hotel Lillo PMS banner" />
+</p>
 
-# Módulo de check-in/out con facturación automática
+<h1 align="center">Hotel Lillo PMS</h1>
 
-# Gestión centralizada de las 32 habitaciones (suites, matrimoniales, twin, familiares)
+<p align="center">
+Sistema de gestión hotelera diseñado específicamente para un hotel familiar de 32 habitaciones.
+</p>
 
-# Control de tarifas por temporada (alta, media, baja)
+---
 
-# Registro histórico de huéspedes y preferencias
+## Descripción general
 
-# Gestión de servicios adicionales (llamadas, minibar)
+**Hotel Lillo PMS** es un sistema de gestión hotelera desarrollado para centralizar y optimizar
+las operaciones diarias del Hotel Lillo.  
+El sistema elimina procesos manuales propensos a errores y proporciona información en tiempo
+real sobre el estado operativo del hotel.
 
-# Reportes automáticos de ocupación e ingresos
+La solución está enfocada en **eficiencia operativa**, **reducción de tiempos administrativos**
+y **mejora de la experiencia del huésped**, manteniendo una interfaz simple e intuitiva para el personal.
 
-# Roles diferenciados (Administrador/Recepcionista)
+---
 
-# Interfaz intuitiva diseñada para reducir tiempos de operación
+## Características principales
 
-# Objetivos del sistema:
+- Sistema de reservas con verificación instantánea de disponibilidad
+- Módulo de check-in y check-out con facturación automática
+- Gestión centralizada de 32 habitaciones:
+  - Suites
+  - Matrimoniales
+  - Twin
+  - Familiares
+- Control de tarifas por temporada:
+  - Alta
+  - Media
+  - Baja
+- Registro histórico de huéspedes y preferencias
+- Gestión de servicios adicionales:
+  - Llamadas
+  - Minibar
+- Reportes automáticos de:
+  - Ocupación
+  - Ingresos
+- Sistema de roles:
+  - Administrador
+  - Recepcionista
+- Interfaz optimizada para reducir tiempos de operación
 
-# Eliminar dobles reservas y errores de cálculo manual
+---
 
-# Reducir tiempo de check-out de 20 a 5 minutos
+## Objetivos del sistema
 
-# Optimizar 3-4 horas diarias en gestión telefónica
+- Eliminar dobles reservas y errores de cálculo manual
+- Reducir el tiempo promedio de check-out de **20 a 5 minutos**
+- Optimizar entre **3 y 4 horas diarias** de gestión telefónica
+- Mejorar la satisfacción del cliente en al menos un **40%**
+- Proporcionar información en tiempo real del estado del hotel
 
-# Mejorar satisfacción del cliente en un 40%
+---
 
-# Proporcionar información en tiempo real del estado del hotel
+## Arquitectura y metodología
 
-# El sistema está desarrollado bajo metodología Scrum y está específicamente diseñado para las necesidades de este hotel familiar, combinando f #f uncionalidad robusta con usabilidad simple para el personal.
+El sistema está desarrollado bajo la metodología **Scrum**, permitiendo iteraciones rápidas
+y adaptación a las necesidades reales del hotel.
 
+La arquitectura sigue un enfoque monolítico basado en Django, con separación clara entre:
+- Lógica de negocio
+- Vistas
+- Templates
+- Persistencia de datos
 
-# 1 paso para poder correr el programa 
-# requisistos tener msql cliente instanlado dependecia espesifica para django mas sql : pip install "django==4.2.*"
-# 2 crear la base de datos en mysql y despues configurar el setings 
-# 3 crear migraciones
-# 4 correr migraciones
+---
 
-# lunes 20 se implemento formulario de huespedes validaciones en js y implementacion en el template del registro de huespedes 
+## Tecnologías utilizadas
 
-# jueves 23 se implementa modulo de ingreso de habitaciones, testo pendiente pues no hay forma de acceder sin poder entrar como admin. -Mitsuki
-# jueves 23, testeo funcional, se crea un nuevo html y espacio en el navbar para testear el funcionamiento de la insercion <-- Crear una card personalizada y arreglar el forms para que se vea mejor -Mitsuki
-# 06-11-2025
-# se implemento parcialmente el historial de reservas de los usuarios para poder consultar las historicas de las instancias de los huespedes 
-# se creo un nuevo template: "Historial_huesped" tambien sea añadio una nueva views en  el modulo de usuarios 
+- Python 3
+- Django 4.2
+- MySQL
+- HTML5
+- CSS
+- JavaScript (validaciones del lado del cliente)
+
+---
+
+## Requisitos previos
+
+Antes de ejecutar el proyecto, asegúrese de tener instalado:
+
+- Python 3.10 o superior
+- MySQL Server
+- MySQL Client
+- pip
+
+Dependencia principal:
+```bash
+pip install "django==4.2.*"
